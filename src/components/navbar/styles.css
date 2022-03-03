@@ -1,0 +1,36 @@
+.active {
+  background-color: hsl(208, 83%, 55%);
+  color: white;
+}
+
+.nav__item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.5rem 9rem 0.5rem 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  transition: display 0.2s ease-in-out;
+}
+
+.home-icon {
+  color: gray;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    height: 100vh;
+  }
+}
+
+.show {
+  display: block;
+}

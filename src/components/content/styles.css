@@ -1,0 +1,172 @@
+.tag {
+  background-color: rgb(231, 231, 231);
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+}
+
+.details-card {
+  margin-top: 2rem;
+  border: 1px solid rgb(212, 210, 210);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+main {
+  width: 80%;
+  padding: 1rem;
+}
+
+.main__title {
+  margin-bottom: 2rem;
+}
+
+.user__selector {
+  display: flex;
+  gap: 1rem;
+}
+
+/* user-button styles */
+
+.user__btn {
+  color: hsl(208, 83%, 55%);
+  background-color: rgb(233, 233, 233);
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid rgb(212, 212, 212);
+  cursor: pointer;
+}
+
+.active-user {
+  background-color: hsl(210, 56%, 87%);
+  border-color: hsl(208, 83%, 55%);
+}
+
+.user__btn-names {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user__btn .account-id {
+  color: black;
+}
+
+.Live {
+  color: hsl(160, 100%, 32%);
+}
+
+.Suspended {
+  color: orange;
+}
+
+.Cancelled {
+  color: red;
+}
+
+.account-details {
+  gap: 1rem;
+}
+
+/* PaymentDetails styles */
+
+.payment-details {
+  width: 70%;
+}
+
+.payment-details__heading .invoice {
+  margin: 2rem 0 3rem 0;
+  text-indent: 1rem;
+}
+
+.payment-details__body {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  max-width: 400px;
+  background-color: rgb(243, 243, 243);
+  color: #778899;
+}
+
+.card .tag {
+  color: black;
+}
+
+.card .balance {
+  color: rgb(97, 115, 133);
+  font-weight: bold;
+}
+
+.card .balance__subtitle {
+  gap: 1rem;
+  color: rgb(59, 70, 82);
+}
+
+.payment-btn {
+  margin: 2rem 0 3rem 0;
+  background-color: hsl(208, 83%, 55%);
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.payment-btn:hover {
+  background-color: hsl(208, 80%, 50%);
+}
+
+.payment-method__heading {
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.3rem;
+}
+
+.payment-method__subtitle .subtitle-icon {
+  color: hsl(160, 100%, 32%);
+  font-size: 1.7rem;
+  margin-right: 1rem;
+}
+
+.payment-method__subtitle span {
+  color: hsl(160, 100%, 32%);
+}
+
+/* products styles */
+
+.products {
+  width: 30%;
+}
+
+.products__heading {
+  margin-bottom: 3rem;
+}
+
+.products-item {
+  display: flex;
+  gap: 1rem;
+  color: rgb(97, 115, 133);
+  margin-bottom: 2rem;
+}
+
+.product-info {
+  margin-right: 3rem;
+}
+
+@media (max-width: 800px) {
+  .account-details {
+    flex-direction: column;
+  }
+
+  .payment-details {
+    width: 100%;
+  }
+
+  .products {
+    width: 100%;
+  }
+}
